@@ -333,23 +333,51 @@ body {
   background: #EEEFE5;
 }
 /* line 155, ../sass/screen.scss */
-.projects .columns {
-  background-color: white;
-  padding: 0px 25px 30px 25px;
-  margin-bottom: 2em;
-  font-size: .9em;
+.projects .project-row {
+  margin: 0 auto;
+}
+/* line 157, ../sass/screen.scss */
+.projects .project-row .project-column {
+  width: calc(25% - 60px);
+  float: left;
+  margin: 10px 10px;
+  background: #333E4D;
+  font-size: 13px;
+  padding: 20px;
+}
+/* line 159, ../sass/screen.scss */
+.projects .project-row .project-column h5 {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+/* line 160, ../sass/screen.scss */
+.projects .project-row .project-column .desc {
+  text-align: center;
+  color: #FFFFFF;
 }
 /* line 161, ../sass/screen.scss */
-.projects h2 {
-  margin-bottom: 1em;
-}
-/* line 164, ../sass/screen.scss */
-.projects img {
-  margin-top: 2em;
-  margin-bottom: 2em;
+.projects .project-row .project-column a {
+  color: #FFFFFF;
+  display: block;
+  padding: 10px;
+  background-color: #5E6B7E;
+  text-decoration: none;
+  margin-top: 15px;
 }
 
-/* line 170, ../sass/screen.scss */
+@media screen and (max-width: 1000px) {
+  /* line 167, ../sass/screen.scss */
+  .project-column {
+    width: calc(50% - 60px) !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 170, ../sass/screen.scss */
+  .project-column {
+    width: calc(100% - 60px) !important;
+  }
+}
+/* line 173, ../sass/screen.scss */
 footer {
   background: #333E4D;
   text-align: center;
@@ -357,14 +385,14 @@ footer {
   padding: 2em;
   position: relative;
 }
-/* line 176, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 footer h5 {
   font-size: 1em;
   padding-top: 1em;
   line-height: 1;
   letter-spacing: inherit;
 }
-/* line 180, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 footer .contacts img {
   width: 20px;
   padding: 10px 10px;
