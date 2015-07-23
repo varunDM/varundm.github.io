@@ -1,2 +1,5 @@
 # varundm.github.io
-Portfolio
+Excercises
+	--HTML
+	--CSS,JS
+	--Ruby
