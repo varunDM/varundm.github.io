@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="shortcut icon" href="images/favicon.ico">
+  	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+</head>
+<body>
+	<div class="header">
+		<span class="sell_button">SELL</span>
+		<div class="links">
+			<a href="#">My Account</a>
+			<a href="#">My Wishlist</a>
+			<a href="#">Checkout</a>
+			<a href="#">Login</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="tools">
+		<div class="search_bar">
+			<input type="text" placeholder="Search">
+			<span class="query-icon"></span>
+		</div>
+		<img class="logo" src="images/logo.png" alt="Logo">
+		<div class="icons">
+			
+			<div class="cart">
+				<div class="cart-ico" style="background: url('images/wish.png') no-repeat; background-size:100%;">
+					<div class="bubble" >2</div>
+				</div>
+				<div class="mini-cart">
+			 		<div class="pointer" style="position: absolute; width: 100%; height: 20px; top: -12px; "></div>
+					<div class="mini-cart-cnt" id="minicart">
+						<ul>
+							<li>
+              				<img class='product-image' src="images/prod-1.jpg">
+                			<div class='product-details'>
+            			    	<div class='mini-name'>Blue Churidar</div>
+                				<div class='mini-price'>Rs.2000</div>
+                				<div class='mini-quantity'>Quantity: 3</div>
+                			</div>
+                			<a href="#" onclick="" class="minicart-remove">x</a>
+                			</li>
+                			<li>
+              				<img class='product-image' src="images/prod-1.jpg">
+                			<div class='product-details'>
+            			    	<div class='mini-name'>Blue Churidar</div>
+                				<div class='mini-price'>Rs.2000</div>
+                				<div class='mini-quantity'>Quantity: 3</div>
+                			</div>
+                			<a href="#" onclick="" class="minicart-remove">x</a>
+                			</li>
+						</ul>
+
+					</div>
+					<div class="mini-cart-actions" id="actions">
+						<a href="cart.php" target="_blank" class="mini-checkout">View Wishlist</a>
+					</div>
+				</div>
+			</div>
+			<div class="cart">
+				<div class="cart-ico"> <div class="bubble">3</div></div>
+				<div class="mini-cart">
+			 		<div class="pointer" style="position: absolute; width: 100%; height: 20px; top: -12px; "></div>
+					<div class="mini-cart-cnt" id="minicart">
+						<ul>
+							<li>
+              				<img class='product-image' src="images/prod-1.jpg">
+                			<div class='product-details'>
+            			    	<div class='mini-name'>Blue Churidar</div>
+                				<div class='mini-price'>Rs.2000</div>
+                				<div class='mini-quantity'>Quantity: 1</div>
+                			</div>
+                			<a href="#" onclick="" class="minicart-remove">x</a>
+                			</li>
+                			<li>
+              				<img class='product-image' src="images/prod-1.jpg">
+                			<div class='product-details'>
+            			    	<div class='mini-name'>Blue Churidar</div>
+                				<div class='mini-price'>Rs.2000</div>
+                				<div class='mini-quantity'>Quantity: 1</div>
+                			</div>
+                			<a href="#" onclick="" class="minicart-remove">x</a>
+                			</li>
+                			<li>
+              				<img class='product-image' src="images/prod-1.jpg">
+                			<div class='product-details'>
+            			    	<div class='mini-name'>Blue Churidar</div>
+                				<div class='mini-price'>Rs.2000</div>
+                				<div class='mini-quantity'>Quantity: 2</div>
+                			</div>
+                			<a href="#" onclick="" class="minicart-remove">x</a>
+                			</li>
+						</ul>
+
+					</div>
+					<div class="mini-cart-total" id="carttotal">Cart Subtotal: Rs 8000</div>
+					<div class="mini-cart-actions" id="actions">
+						<a href="cart.php" target="_blank" class="mini-view-cart">View Cart</a>
+						<a href="checkout.php" target="_blank" class="mini-checkout">Proceed to Checkout</a>
+					</div>
+				</div>
+			</div>
+			<a href="#"  class="login-button" >LOGIN</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="navbar">
+		<ul class="categories">
+			<li class="sub-categories">TOPS 
+			<img class="triangle" src="images/triangle.png">
+			<ul>
+				<li>Collars</li>
+				<li>Necklines</li>
+				<li>Straps</li>
+				<li>Cuffs</li>
+				<li>Pockets</li>
+			</ul>
+			</li>
+			
+			<li class="sub-categories">SKIRTS<img class="triangle" src="images/triangle.png"><ul>
+				<li>Basic Shapes</li>
+				<li>Styles</li>
+				<li>Hemlines</li>
+			</ul></li>
+			
+			<li class="sub-categories">DRESSES<img class="triangle" src="images/triangle.png"><ul>
+				<li>Basic Shapes</li>
+				<li>Styles</li>
+				<li>Skirt and Dress length</li>
+			</ul></li>
+			
+			<li class="sub-categories">JACKETS<img class="triangle" src="images/triangle.png"><ul>
+				<li>Jacket and Top length</li>
+				<li>Double Breasted</li>
+				<li>Single Breasted</li>
+				<li>Jacket Styles</li>
+				<li>Vests</li>
+			</ul></li>
+			
+			<li class="sub-categories">PANTS<img class="triangle" src="images/triangle.png"><ul>
+				<li>Fronts</li>
+				<li>Width</li>
+				<li>Rise</li>
+				<li>Styles</li>
+			</ul></li>
+			
+			<li class="sub-categories">SHIRTS<img class="triangle" src="images/triangle.png"><ul>
+				<li>Lenghts</li>
+				<li>Styles</li>
+			</ul></li>
+			
+			<li class="sub-categories">ACCESSORIES<img class="triangle" src="images/triangle.png"><ul>
+				<li>Belts</li>
+				<li>Earrings</li>
+				<li>Hats</li>
+				<li>Eyewears</li>
+				<li>Boots</li>
+			</ul></li>
+			
+		</ul>
+	</div>
+	<div class="navbar-mobile">
+				<ul class="categories">
+			<li class="sub-categories">TOPS 
+			<ul>
+				<li>Collars</li>
+				<li>Necklines</li>
+				<li>Straps</li>
+				<li>Cuffs</li>
+				<li>Pockets</li>
+			</ul>
+			</li>
+			
+			<li class="sub-categories">SKIRTS<ul>
+				<li>Basic Shapes</li>
+				<li>Styles</li>
+				<li>Hemlines</li>
+			</ul></li>
+			
+			<li class="sub-categories">DRESSES<ul>
+				<li>Basic Shapes</li>
+				<li>Styles</li>
+				<li>Skirt and Dress length</li>
+			</ul></li>
+			
+			<li class="sub-categories">JACKETS<ul>
+				<li>Jacket and Top length</li>
+				<li>Double Breasted</li>
+				<li>Single Breasted</li>
+				<li>Jacket Styles</li>
+				<li>Vests</li>
+			</ul></li>
+			
+			<li class="sub-categories">PANTS<ul>
+				<li>Fronts</li>
+				<li>Width</li>
+				<li>Rise</li>
+				<li>Styles</li>
+			</ul></li>
+			
+			<li class="sub-categories">SHIRTS<ul>
+				<li>Lenghts</li>
+				<li>Styles</li>
+			</ul></li>
+			
+			<li class="sub-categories">ACCESSORIES<ul>
+				<li>Belts</li>
+				<li>Earrings</li>
+				<li>Hats</li>
+				<li>Eyewears</li>
+				<li>Boots</li>
+			</ul></li>
+			<div class="clear"></div>
+			
+		</ul>
+	</div>
+	<div class="banner"></div>
+	<h3 class="products-header">Featured</h3>
+	<div class="products">
+			<div class="product-box">
+				<div class="box-overlay">
+					<img src="images/heart-green.png">
+					<a href="#">ADD TO CART</a>
+					<a href="#">VIEW</a>
+				</div>
+				<img src="images/prod-1.jpg">
+				<div class="tag">
+					<h5>Blue Churidar</h5>
+					<h6>Rs. 2000</h6>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="box-overlay">
+					<img src="images/heart-green.png">
+					<a href="#">ADD TO CART</a>
+					<a href="#">VIEW</a>
+				</div>
+				<img src="images/prod-1.jpg">
+				<div class="tag">
+					<h5>Blue Churidar</h5>
+					<h6>Rs. 2000</h6>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="box-overlay">
+					<img src="images/heart-green.png">
+					<a href="#">ADD TO CART</a>
+					<a href="#">VIEW</a>
+				</div>
+				<img src="images/prod-1.jpg">
+				<div class="tag">
+					<h5>Blue Churidar</h5>
+					<h6>Rs. 2000</h6>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="box-overlay">
+					<img src="images/heart-green.png">
+					<a href="#">ADD TO CART</a>
+					<a href="#">VIEW</a>
+				</div>
+				<img src="images/prod-1.jpg">
+				<div class="tag">
+					<h5>Blue Churidar</h5>
+					<h6>Rs. 2000</h6>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="box-overlay">
+					<img src="images/heart-green.png">
+					<a href="#">ADD TO CART</a>
+					<a href="#">VIEW</a>
+				</div>
+				<img src="images/prod-1.jpg">
+				<div class="tag">
+					<h5>Blue Churidar</h5>
+					<h6>Rs. 2000</h6>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="box-overlay">
+					<img src="images/heart-green.png">
+					<a href="#">ADD TO CART</a>
+					<a href="#">VIEW</a>
+				</div>
+				<img src="images/prod-1.jpg">
+				<div class="tag">
+					<h5>Blue Churidar</h5>
+					<h6>Rs. 2000</h6>
+				</div>
+			</div>
+			<div class="product-box">
+				<div class="box-overlay">
+					<img src="images/heart-green.png">
+					<a href="#">ADD TO CART</a>
+					<a href="#">VIEW</a>
+				</div>
+				<img src="images/prod-1.jpg">
+				<div class="tag">
+					<h5>Blue Churidar</h5>
+					<h6>Rs. 2000</h6>
+				</div>
+			</div>	
+				
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

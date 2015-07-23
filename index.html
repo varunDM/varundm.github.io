@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Varun Das M</title>
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css">
+  	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+  	<link rel="shortcut icon" href="images/favicon.ico">
+  	<script src="js/jquery.min.js"></script>
+  	<script>
+	$(document).ready(function(){
+		$(".wrapp").hide();
+
+	    $(".trigger").click(function(){
+	        $(".sidebar").addClass("push");
+	        $(".container").addClass("push-cont");
+	        $(".trigger").addClass("push-trig");
+	        $(".wrapp").show();
+	        $(".contacts").hide();
+	        $("footer").addClass("push-cont");
+	    });
+
+	     $(".wrapp").click(function(){
+	        $(".sidebar").removeClass("push");
+	        $(".container").removeClass("push-cont");
+	        $(".trigger").removeClass("push-trig");
+	        $(".wrapp").hide();
+	        $(".contacts").show();
+	        $("footer").removeClass("push-cont");
+	    });
+	
+
+	});
+	
+	</script>
+</head>
+<body>
+	<div class="trigger"></div>
+	<div class="sidebar">
+		<h5>CONTACT</h5>
+		<div class="field">
+			
+			<h6><a href="mailto:mailforvarundas@gmail.com">Mailforvarundas@gmail.com</a></h6>
+		</div>
+		<div class="field">
+			
+			<h6><a href="#">+91 8714427924</a></h6>
+		</div>
+		<div class="field accounts" style="margin-top:1em;">
+			<a href="https://www.facebook.com/mailforvarun"><img style="  position: relative; top: -2px; left: 1px;" src="images/facebook31.png"></a>
+			<a href="http://stackoverflow.com/users/1854190/varun-das"><img src="images/twitter21.png"></a>
+			<a href="https://github.com/varunDM"><img src="images/github13.png"></a>
+			<a href="https://in.linkedin.com/pub/varun-das/81/1b2/711"><img src="images/linkedin11.png"></a>
+		</div>	
+	</div>
+	<div class="wrapp">X
+	</div>
+	<div class="container">
+		<div class="header">
+			<h2>Hi, I am Varun</br><div class="typed">I design and build websites</div><span class="blink">|</span></h2>
+			<img class="dp circleClass" src="images/me.jpg">
+			<h5 class="scroll-down">Scroll down to know more</h5>
+		</div>
+		<div class="quote">
+			<div class="content">
+				<h5>"During my 3rd year of college, I got an opportunity to develop a website for the Technical Fest. I enjoyed creating the websites and started appreciating the beauty of the code. And then I fell in love with CSS."</h5>
+			</div>
+		</div>
+
+		<div class="about row">
+		  <div class="content">
+			<img src="images/cert.png" class="two columns cont-img">
+			<div class="ten columns">
+				<h2>Education</h2>
+				<h5>B Tech Computer Science and Engineering</h5>
+				College of Engineering Chengannur
+			</div>
+		  </div>
+		</div>
+		<div class="skills row">
+		  <div class="content">
+			<img src="images/skill.png" class="two columns cont-img">
+			<div class="ten columns">
+				<h2>Skills</h2>
+				<div>
+					<h4>Web Developer</h4>
+					<ul>
+						<li>HTML/CSS/SASS</li>
+						<li>JS/Angular JS</li>
+						<li>PHP</li>
+						<li>MySQL</li>
+					</ul>
+				</div>
+				<div style="display:inline;">
+					<h4>Mobile Developer</h4>
+					<ul>
+						<li>Java, Android</li>
+					</ul>
+				</div>
+				<div style="display:inline;">
+					<h4>Others</h4>
+					<ul>
+						<li>C/C++</li>
+						<li>Photoshop/After FX/Premiere</li>
+					</ul>
+				</div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="projects row">
+		  <div class="content">
+			<h2>Projects</h2>
+			<div class="project-row">
+			<div class="project-column">
+					<h5>Automated Product Classifier</h5> 
+					<div class="desc">A web application that helps to find the exact category a product belongs to using machine learning techniques for text classification.</div>
+					<div class="tags"><span>Python</span><span>Django</span><span>HTML</span><span>CSS</span></div>	
+				</div>
+				
+				<div class="project-column">
+					<h5>Admission Management Portal</h5>
+					<div class="desc">A web application that reduces the paper works during admissions in schools with an automated Transfer Certificate generating module.</div>
+					<div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JS</span></div>	
+				</div>
+				<div class="project-column">
+					<h5>Online Auctioning System for Books</h5>
+					<div class="desc">A web application that helps the students to sell/buy text books with realtime bidding feature.</div>
+					<div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JS</span><span>AJAX</span></div>	
+				</div>
+				<div class="project-column">
+					<h5>E-Commerce Site</h5> 
+					<div class="desc">Design for an E-commerce website of clothings.</div>
+					<a href="http://varundm.github.io/E-Comm/">View Site</a>
+					<div class="tags"><span>HTML</span><span>CSS</span></div>
+
+				</div>
+				<div style="clear:both;"></div>
+
+				<div class="project-column">
+					<h5>Summit</h5> 
+					<div class="desc">Website for the TechFest of College of Engineering Chengannur.</div>
+					<a href="http://varundm.github.io/Summit/">View Site</a>
+					<div class="tags"><span>HTML</span><span>CSS</span></div>
+
+				</div>
+			</div>
+		  </div>
+		</div>
+		
+	</div>
+	<footer class="row">
+	    <div class="content">
+	    	<div class="contacts">
+	    	  <div style="padding-top:2em;">
+	    	  	<h5>Mailforvarundas@gmail.com</h5>
+	    	  </div>
+	    	  <div>
+					    		<h5>+91 8714427924</h5>
+			</div>
+	    		
+	    		<div >
+	    			<a href="https://www.facebook.com/mailforvarun"><img src="images/facebook31_w.png"></a>
+					<a href="http://stackoverflow.com/users/1854190/varun-das"><img src="images/twitter21_w.png"></a>
+					<a href="https://github.com/varunDM"><img src="images/github13_w.png"></a>
+					<a href="https://in.linkedin.com/pub/varun-das/81/1b2/711"><img src="images/linkedin11_w.png"></a>
+	    		</div>
+	    	</div>
+	    	<div class="credits">
+	    		<h5>Handmade by Varun Das M</h5>
+	    	</div>
+			
+		</div>
+		</footer>
+</body>
+</html>
