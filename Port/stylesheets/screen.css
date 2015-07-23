@@ -1,0 +1,400 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+@import "compass/reset";
+*/
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+/* line 48, ../sass/screen.scss */
+body {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  background: #333E4D;
+}
+
+/* line 56, ../sass/screen.scss */
+.container {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  left: 0px;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  -ms-transition: 0.6s ease-out;
+  -o-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+
+/* line 63, ../sass/screen.scss */
+.sidebar {
+  z-index: 10;
+  height: 100%;
+  width: 250px;
+  font-size: 5em;
+  position: fixed;
+  background: #48A6A1;
+  top: 0;
+  left: -350px;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0em .4em;
+}
+/* line 67, ../sass/screen.scss */
+.sidebar h5 {
+  margin-top: 4em;
+}
+/* line 68, ../sass/screen.scss */
+.sidebar h6 {
+  font-weight: bold;
+  display: inline;
+}
+/* line 69, ../sass/screen.scss */
+.sidebar img {
+  width: 20px;
+}
+/* line 70, ../sass/screen.scss */
+.sidebar .field {
+  width: 100%;
+  line-height: 0 !important;
+}
+/* line 72, ../sass/screen.scss */
+.sidebar .field a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* line 73, ../sass/screen.scss */
+.sidebar .field a:hover {
+  text-decoration: underline dotted;
+}
+/* line 75, ../sass/screen.scss */
+.sidebar .accounts a {
+  background: #FFFFFF;
+  display: inline-block;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 80, ../sass/screen.scss */
+.trigger {
+  z-index: 11;
+  left: 2em;
+  top: 2em;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background: #333E4D url("../images/LOGO_W.png") no-repeat center;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  background-size: 30px 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+/* line 82, ../sass/screen.scss */
+.trigger:hover {
+  background: #333E4D url("../images/LOGO_W.png") no-repeat center;
+  background-size: 30px 30px;
+}
+
+/* line 85, ../sass/screen.scss */
+.push {
+  left: 0px;
+}
+
+/* line 86, ../sass/screen.scss */
+.push-cont {
+  left: 160px;
+  width: calc(100% - 160px);
+}
+
+/* line 88, ../sass/screen.scss */
+.push-trig {
+  position: fixed;
+  margin-left: 95px;
+  background: #48A6A1 url("../images/LOGO_W.png") no-repeat center !important;
+  background-size: 30px 30px  !important;
+  cursor: default;
+}
+
+/* line 90, ../sass/screen.scss */
+.wrapp {
+  display: none;
+  z-index: 20;
+  height: 100vh;
+  width: 90vw;
+  position: fixed;
+  left: 311px;
+  width: calc(100vw - 325px);
+  top: 0px;
+  color: #FFFFFF !important;
+  opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 94, ../sass/screen.scss */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    padding: .8em 0em;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+  /* line 96, ../sass/screen.scss */
+  .sidebar h5 {
+    margin-top: 1em;
+  }
+
+  /* line 98, ../sass/screen.scss */
+  .push {
+    display: block;
+  }
+
+  /* line 99, ../sass/screen.scss */
+  .push-cont {
+    left: 0px;
+    width: 80%;
+  }
+
+  /* line 100, ../sass/screen.scss */
+  .wrapp {
+    position: absolute !important;
+    content: 'X';
+    height: 30px;
+    width: 30px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    top: 340px;
+    cursor: pointer;
+    opacity: 1;
+    padding: .5em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 16px;
+    background: #FFFFFF;
+    color: #7B7B7B !important;
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  /* line 109, ../sass/screen.scss */
+  .wrapp:hover {
+    background: #FFFFFF;
+  }
+
+  /* line 110, ../sass/screen.scss */
+  .push-trig {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 114, ../sass/screen.scss */
+  .cont-img {
+    width: 40%;
+  }
+}
+/* line 118, ../sass/screen.scss */
+.header {
+  padding-top: 10em;
+  height: 100vh;
+  background: #333E4D;
+  position: relative;
+  color: #FFFFFF;
+}
+/* line 124, ../sass/screen.scss */
+.header img {
+  width: 10em;
+  height: auto;
+  margin-top: 1em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 128, ../sass/screen.scss */
+.header .scroll-down {
+  margin-top: 3em;
+}
+/* line 131, ../sass/screen.scss */
+.header .typed {
+  display: inline-block;
+  width: 12em;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: type 5s;
+  -moz-animation: type 5s;
+  -ms-animation: type 5s;
+  -o-animation: type 5s;
+  animation: type 5s;
+}
+/* line 132, ../sass/screen.scss */
+.header .blink {
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -ms-animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+  vertical-align: top;
+}
+
+/* line 135, ../sass/screen.scss */
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 136, ../sass/screen.scss */
+.quote {
+  border-top: 1px solid #EAEAEA;
+  padding: 5em 0em;
+  background: #FFFFFF;
+}
+
+/* line 143, ../sass/screen.scss */
+.about {
+  background: #EEEFE5;
+  text-align: left;
+  border-top: 1px solid #EAEAEA;
+  padding: 5em 0em;
+}
+
+/* line 144, ../sass/screen.scss */
+.skills {
+  background: #FFFFFF;
+  text-align: left;
+  border-top: 1px solid #EAEAEA;
+  padding: 5em 0em;
+}
+
+/* line 146, ../sass/screen.scss */
+.tags {
+  margin-top: 2em;
+}
+/* line 148, ../sass/screen.scss */
+.tags span {
+  background: #DE5C53;
+  color: #FFFFFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 1px 8px;
+  margin-right: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* line 153, ../sass/screen.scss */
+.projects {
+  border-top: 1px solid #EAEAEA;
+  padding: 5em 0em;
+  background: #EEEFE5;
+}
+/* line 155, ../sass/screen.scss */
+.projects .project-row {
+  margin: 0 auto;
+}
+/* line 157, ../sass/screen.scss */
+.projects .project-row .project-column {
+  width: calc(25% - 60px);
+  float: left;
+  margin: 10px 10px;
+  background: #333E4D;
+  font-size: 13px;
+  padding: 20px;
+}
+/* line 159, ../sass/screen.scss */
+.projects .project-row .project-column h5 {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+/* line 160, ../sass/screen.scss */
+.projects .project-row .project-column .desc {
+  text-align: center;
+  color: #FFFFFF;
+}
+/* line 161, ../sass/screen.scss */
+.projects .project-row .project-column a {
+  color: #FFFFFF;
+  display: block;
+  padding: 10px;
+  background-color: #5E6B7E;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 167, ../sass/screen.scss */
+  .project-column {
+    width: calc(50% - 60px) !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 170, ../sass/screen.scss */
+  .project-column {
+    width: calc(100% - 60px) !important;
+  }
+}
+/* line 173, ../sass/screen.scss */
+footer {
+  background: #333E4D;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 2em;
+  position: relative;
+}
+/* line 179, ../sass/screen.scss */
+footer h5 {
+  font-size: 1em;
+  padding-top: 1em;
+  line-height: 1;
+  letter-spacing: inherit;
+}
+/* line 183, ../sass/screen.scss */
+footer .contacts img {
+  width: 20px;
+  padding: 10px 10px;
+  background-color: #1D2938;
+}
