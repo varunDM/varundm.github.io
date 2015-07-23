@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <meta charset="UTF-8"> 
+ 	<script>
+		$(function() {
+			$( "#datepicker" ).datepicker();
+		});
+	</script>
+  	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container form-container">
+		<h1>Form</h1>
+		<form role="form" onsubmit="return false;">
+			<label for="first_name">First Name </label>
+			<input type="text" id="first_name" class="form-control required" placeholder="John" ></br>
+			<div class="error"></div>
+
+			<label for="second_name">Second Name </label>
+			<input type="text" id="second_name" class="form-control required" placeholder="Doe"></br>
+			<div class="error"></div>
+
+			<label for="email">Email </label>
+			<input type="text" id="email" placeholder="Enter email" class="form-control required"></br>
+			<div class="error"></div>
+
+			<label for="dob">DOB </label>
+			<input type="text" id="datepicker" class="form-control required"></br>
+			<div class="error"></div>
+
+			<label for="password">Password </label>
+			<input type="text" id="password" class="form-control required"></br>
+			<div class="error"></div>
+
+			<label for="confirm_password">Confirm Password </label>
+			<input type="text" id="confirm_password" class="form-control"></br>
+			<div class="error"></div>
+
+			<label for="phone">Phone </label>
+			<input type="text" id="phone" class="form-control required"></br>
+			<div class="error"></div>
+
+			<label for="state">State </label>
+			<select id="state" class="form-control">
+				<option value="" disabled selected>Select state</option>
+				<option>Kerala</option>
+				<option>Goa</option>
+			</select></br>
+			<div class="error"></div>
+
+			<label for="city">City </label>
+			<input type="text" id="city" class="form-control required"></br>
+			<div class="error"></div>
+
+			<label for="offers">Get special offers and discounts </label>
+			<input type="checkbox" id="offers"></br>
+
+			<input type="submit" class="btn btn-primary" onclick="FormValidation()" value="Submit">
+		</form>
+	</div>
+	<div class="container summary-container">
+		<h1>Summary</h1>
+		<table class="table">
+			<tr>
+				<td>First Name </td>
+				<td id="first_name_cell"></td>
+			</tr>
+			<tr>
+				<td>Second Name </td>
+				<td id="second_name_cell"></td>
+			</tr>
+			<tr>
+				<td>Email </td>
+				<td id="email_cell"></td>
+			</tr>
+			<tr>
+				<td>DOB </td>
+				<td id="dob_cell"></td>
+			</tr>
+			<tr>
+				<td>Phone </td>
+				<td id="phone_cell"></td>
+			</tr>
+			<tr>
+				<td>State </td>
+				<td id="state_cell"></td>
+			</tr>
+			<tr>
+				<td>City </td>
+				<td id="city_cell"></td>
+			</tr>
+			<tr>
+				<td>Get special offers and discounts ? </td>
+				<td id="offers_cell"></td>
+			</tr>
+		</table>
+		<button onclick="editForm()" class="btn btn-success ">Edit Form</button>
+	</div>
+</body>
+</html>

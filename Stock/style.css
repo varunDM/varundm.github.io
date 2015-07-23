@@ -1,0 +1,23 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;	
+	background: #333;
+	color: #FFFFFF;
+}
+.container {
+	margin: 0px auto;
+	padding: 20px;
+	height: 600px;
+	width: 900px;
+	background: #FFFFFF;
+	color: #333;
+	text-align: center;	
+}
+
+.container input[type="button"]{
+	border: 1px solid #333;
+	padding: 8px 15px;
+	margin: 15px;
+	color: #FFFFFF;
+	background: #333;
+}

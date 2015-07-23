@@ -1,0 +1,20 @@
+.container {
+	width: 50%;
+	padding: 50px;
+}
+.error {
+	margin: -12px 0px 15px 0px;
+	padding: 7px;
+	background: #CB5E5E;
+	width: 50%;
+	border: 1px solid #DB2626;
+	border-radius: 3px;
+	color: #FFF;
+	display: block;
+	display: none;
+}
+
+.summary-container {
+	display: block;
+	display: none;
+}	

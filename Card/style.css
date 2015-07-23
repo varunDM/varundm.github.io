@@ -1,0 +1,101 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;	
+	font-size: 1em;
+}
+h1,h2,h3,h4,h5 { margin: 0;}
+
+.clear { clear: both;}
+
+.container {
+	width: 500px;
+	margin: 60px auto;
+	border: 1px solid;
+}
+.header {
+	padding: 20px 20px 0px 20px;
+}
+.header .designation {
+	float: left;
+}
+.header .designation h3 {
+	color: #A72222;
+	font-size: .7rem;
+}
+
+.header .contact{
+	float: right;
+	font-size: 0.7rem;
+	text-align: right;
+	text-transform: capitalize;
+}
+
+.content {
+	text-align: center;
+}
+.content .logo {
+	position: relative;
+	margin: 0px 20px;
+}
+.content .logo img {
+	width: 60px;
+}
+.content .logo span {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #9E1B1B;
+	font-weight: bold;
+	font-size: .8rem;
+}
+.content .brand {
+	background: #2A9FB3;
+	color: #FFFFFF;
+	padding: 10px;
+}
+
+.content .bg-container {
+	padding: 10px;
+	position: relative;
+}
+.content .bg-container::after {
+	content: "";
+	background: url("images/bg.jpeg");
+	opacity: .3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.content .brand h1 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 1.1em;
+}
+.content .address {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .6rem;
+}
+
+.content li {
+	display: inline;
+	color: #A20C0C;
+	font-weight: bold;
+	padding: 0px 5px;
+	font-size: .7rem;
+	text-transform: uppercase;
+}
+
+.footer {
+	text-align: center;
+	padding: 5px 20px;
+	background: #5839D1;
+	color: #FFFFFF;
+	font-size: .7rem;
+}
+.footer li{
+	display: inline;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function checkStock(){
+			var user1 = document.getElementById("user1").value;
+			var user2 =  document.getElementById("user2").value;
+			var user3 =  document.getElementById("user3").value;
+			var user4 =  document.getElementById("user4").value;
+			var sum = parseInt(user1) +parseInt(user2) +parseInt(user3) +parseInt(user4);
+			if(sum>50)
+				document.getElementById("result").innerHTML = "Product is Out-of-Stock";
+			else
+				document.getElementById("result").innerHTML = "Proceed to Checkout";
+		}
+	</script>			
+</head>
+<body>
+	<div class="container">
+		<h2>Stock</h2>
+		<label for="user1">User 1: </label> 
+		<input type="number" id="user1" min="0"></br></br>
+		<label for="user2">User 2: </label> 
+		<input type="number" id="user2" min="0"></br></br>
+		<label for="user3">User 3: </label> 
+		<input type="number" id="user3" min="0"></br></br>
+		<label for="user4">User 4: </label> 
+		<input type="number" id="user4" min="0"></br></br>
+
+		<input type="button" onclick="checkStock()" value="Check">
+		
+		<div id="result" style="color: #B10000; font-size: 1.2em; font-weight: bold;">Result</div>
+	</div>
+</body>
+</html>
